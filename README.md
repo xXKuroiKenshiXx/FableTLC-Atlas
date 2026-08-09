@@ -32,3 +32,4 @@ npm run build
 https://xxkuroikenshixx.github.io/FableTLC-Atlas/
 
 ```
+<img width="1842" height="1167" alt="image" src="https://github.com/user-attachments/assets/1c05d77d-3ab9-42fb-9110-879dc6113251" />
