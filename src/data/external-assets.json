@@ -209,5 +209,937 @@
     "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/466496/",
     "sourceName": "The Models Resource",
     "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "JACK_OF_BLADES"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Jack of Blades",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Jack_of_Blades.jpg",
+    "source": "https://fable.fandom.com/wiki/Jack_of_Blades",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "WHISPER"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Whisper",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Arena_Whisper.jpg",
+    "source": "https://fable.fandom.com/wiki/Whisper",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BRIAR_ROSE",
+      "BRIAR"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Briar Rose",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/BriarRose.jpg",
+    "source": "https://fable.fandom.com/wiki/Briar_Rose",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MAZE"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Maze",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Maze.jpg",
+    "source": "https://fable.fandom.com/wiki/Maze",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "THUNDER"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Thunder",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Damian-buzugbe-thunder-01.jpg",
+    "source": "https://fable.fandom.com/wiki/Thunder",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "LADY_GREY"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Lady Grey",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Lady_Grey.jpg",
+    "source": "https://fable.fandom.com/wiki/Lady_Grey",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "ARCHAEOLOGIST"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Archaeologist",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Archaeologist.jpg",
+    "source": "https://fable.fandom.com/wiki/Archaeologist",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SCARLET_ROBE"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Scarlet Robe",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Scarlet_Robe.jpg",
+    "source": "https://fable.fandom.com/wiki/Scarlet_Robe",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BROM"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Brom",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Brom.jpg",
+    "source": "https://fable.fandom.com/wiki/Brom",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SISTER"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Theresa / sister",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Theresa.jpg",
+    "source": "https://fable.fandom.com/wiki/Theresa",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "TRADER"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Trader",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Trader.png",
+    "source": "https://fable.fandom.com/wiki/Trader_(Fable)",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "GUARD"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Albion Guard",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Albion_Guard.jpg",
+    "source": "https://fable.fandom.com/wiki/Guard",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BANDIT"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Bandit",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Bandit.jpg",
+    "source": "https://fable.fandom.com/wiki/Bandit",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "HOBBE_SPELLCASTER",
+      "HOBBE_BASIC_SPELLCASTER"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Hobbe Mage",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Hobbe_Mage.jpg",
+    "source": "https://fable.fandom.com/wiki/Hobbe",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "HOBBE"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Hobbe",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Hobbe_Brute.jpg",
+    "source": "https://fable.fandom.com/wiki/Hobbe",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "WHITE_BALVERINE"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "White Balverine",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/White_Balverine.jpg",
+    "source": "https://fable.fandom.com/wiki/White_Balverine",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BALVERINE"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Balverine",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Balverine_Closeup.jpg",
+    "source": "https://fable.fandom.com/wiki/Balverine",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "WOOD_NYMPH"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Wood Nymph",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Wood_Nymph.jpg",
+    "source": "https://fable.fandom.com/wiki/Nymph",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "LAKE_NYMPH",
+      "WATER_NYMPH"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Water Nymph",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Water_Nymph.jpg",
+    "source": "https://fable.fandom.com/wiki/Nymph",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SUCCUBUS_NYMPH"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Succubus Nymph",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Succubus_Nymph.jpg",
+    "source": "https://fable.fandom.com/wiki/Nymph",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "NYMPH"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Nymph",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Nymph.jpg",
+    "source": "https://fable.fandom.com/wiki/Nymph",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "EARTH_TROLL"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Earth Troll",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Earth_Troll_(TLC).jpg",
+    "source": "https://fable.fandom.com/wiki/Earth_Troll",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "ROCK_TROLL"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Rock Troll",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Rock_Troll.jpg",
+    "source": "https://fable.fandom.com/wiki/Rock_Troll",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "ICE_TROLL"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Ice Troll",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Ice_Troll.jpg",
+    "source": "https://fable.fandom.com/wiki/Ice_Troll",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "UNDEAD"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Undead",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Undead.jpg",
+    "source": "https://fable.fandom.com/wiki/Undead",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MINION_DREADWINGS",
+      "DREADWING"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Dreadwing",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Dreadwing.jpg",
+    "source": "https://fable.fandom.com/wiki/Minion",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MINION_WARDOG"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Minion Wardog",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Minion_Wardog_conceptart.jpg",
+    "source": "https://fable.fandom.com/wiki/Minion",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MINION"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Minion",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Minion.jpg",
+    "source": "https://fable.fandom.com/wiki/Minion",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "KRAKEN"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Kraken",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Kraken.jpg",
+    "source": "https://fable.fandom.com/wiki/Kraken",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "ARACHANOX",
+      "ARACHNOX"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Arachanox",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Arachanox.jpg",
+    "source": "https://fable.fandom.com/wiki/Arachanox",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BANSHEE"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Banshee",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Fable_Banshee.jpg",
+    "source": "https://fable.fandom.com/wiki/Banshee",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "WASP_QUEEN"
+    ],
+    "exact": false,
+    "category": "Entidad",
+    "title": "Wasp Queen",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Wasp_Queen.jpg",
+    "source": "https://fable.fandom.com/wiki/Wasp_Queen",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "ARKEN",
+      "LEGENDARY_CROSSBOW"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Arken's Crossbow",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Arkens_Crossbow.png",
+    "source": "https://fable.fandom.com/wiki/Arken%27s_Crossbow",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SKORM"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Skorm's Bow",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Skorms_Bow.png",
+    "source": "https://fable.fandom.com/wiki/Skorm%27s_Bow",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SOLUS"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Solus Greatsword",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Solus_Greatsword.png",
+    "source": "https://fable.fandom.com/wiki/Solus_Greatsword",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SENTINUS"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "The Sentinus",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Sentinus.png",
+    "source": "https://fable.fandom.com/wiki/The_Sentinus",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "HARBINGER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "The Harbinger",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Harbinger.png",
+    "source": "https://fable.fandom.com/wiki/The_Harbinger",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "KATANA_HIRYU",
+      "HIRYU"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Katana Hiryu",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Katana_Hiryu.png",
+    "source": "https://fable.fandom.com/wiki/Katana_Hiryu",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MURREN_GREATAXE"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Murren Greataxe",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Themurrengreataxe.jpg",
+    "source": "https://fable.fandom.com/wiki/Murren_Greataxe",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MURREN_GREATHAMMER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Murren Greathammer",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Murren_Greathammer.png",
+    "source": "https://fable.fandom.com/wiki/Murren_Greathammer",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "RONOK"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Ronok the Axe",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Ronok_The_Axe.png",
+    "source": "https://fable.fandom.com/wiki/Ronok_the_Axe",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "WELLOW"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Wellow’s Pickhammer",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Wellows_Pickhammer.png",
+    "source": "https://fable.fandom.com/wiki/Wellow%27s_Pickhammer",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "CUTLASS_BLUETANE",
+      "BLUETANE"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Cutlass Bluetane",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Cutlass_Bluetane.png",
+    "source": "https://fable.fandom.com/wiki/Cutlass_Bluetane",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "DOLLMASTER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Dollmaster’s Mace",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Dollmasters_Mace.png",
+    "source": "https://fable.fandom.com/wiki/Dollmaster%27s_Mace",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "FRYING_PAN"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Frying Pan",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Frying_Pan.png",
+    "source": "https://fable.fandom.com/wiki/Frying_Pan",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_LONGSWORD"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Longsword",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Longsword.jpg",
+    "source": "https://fable.fandom.com/wiki/Longsword",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_KATANA"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Katana",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Katana.jpg",
+    "source": "https://fable.fandom.com/wiki/Katana",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_AXE"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Axe",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Axe.jpg",
+    "source": "https://fable.fandom.com/wiki/Axe",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_CLEAVER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Cleaver",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Cleaver.jpg",
+    "source": "https://fable.fandom.com/wiki/Cleaver",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_GREATSWORD"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Greatsword",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Greatsword.jpg",
+    "source": "https://fable.fandom.com/wiki/Greatsword",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_GREATAXE"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Greataxe",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Greataxe.jpg",
+    "source": "https://fable.fandom.com/wiki/Greataxe",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_GREATMACE"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Greatmace",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Greatmace.jpg",
+    "source": "https://fable.fandom.com/wiki/Greatmace",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_MACE"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Mace",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Mace.jpg",
+    "source": "https://fable.fandom.com/wiki/Mace",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "MASTER_PICKHAMMER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Master Pickhammer",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Master_Pickhammer.jpg",
+    "source": "https://fable.fandom.com/wiki/Pickhammer",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "IRON_KATANA"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Iron Katana",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Ironkatana.jpg",
+    "source": "https://fable.fandom.com/wiki/Katana",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "IRON_CLEAVER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Iron Cleaver",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Ironcleaver.jpg",
+    "source": "https://fable.fandom.com/wiki/Cleaver",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "STEEL_KATANA"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Steel Katana",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Steelkatana.jpg",
+    "source": "https://fable.fandom.com/wiki/Katana",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "STEEL_CLEAVER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Steel Cleaver",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Steelcleaver.jpg",
+    "source": "https://fable.fandom.com/wiki/Cleaver",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "STEEL_LONGSWORD"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Steel Longsword",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Steellongsword.jpg",
+    "source": "https://fable.fandom.com/wiki/Longsword",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "OBSIDIAN_KATANA"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Obsidian Katana",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Obsidiankatana.jpg",
+    "source": "https://fable.fandom.com/wiki/Katana",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "OBSIDIAN_CLEAVER"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Obsidian Cleaver",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Obsidiancleaver.jpg",
+    "source": "https://fable.fandom.com/wiki/Cleaver",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "OBSIDIAN_LONGSWORD"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Obsidian Longsword",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Obsidianlongsword.jpg",
+    "source": "https://fable.fandom.com/wiki/Longsword",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SCIMITAR"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Scimitar",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Scimitar_(TLC).jpg",
+    "source": "https://fable.fandom.com/wiki/Scimitar",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BANDIT_CROSSBOW"
+    ],
+    "exact": false,
+    "category": "Arma",
+    "title": "Bandit Crossbow",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/BANDIT_CROSSBOW.jpg",
+    "source": "https://fable.fandom.com/wiki/Crossbow",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BLACK_ROSE"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Black Rose",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Blackrose.jpg",
+    "source": "https://fable.fandom.com/wiki/Black_Rose",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "COOKING_APPLE"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Cooking Apple",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Cooking_Apple.jpg",
+    "source": "https://fable.fandom.com/wiki/Cooking_Apple",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "GOLDEN_CARROT"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Golden Carrot",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Fable_-_Golden_Carrot.jpg",
+    "source": "https://fable.fandom.com/wiki/Golden_Carrot",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "RUBY"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Ruby",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Fable_Ruby.jpg",
+    "source": "https://fable.fandom.com/wiki/Ruby",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "FAKE_WEDDING_RING"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Fake Wedding Ring",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Fake_Wedding_Ring.jpg",
+    "source": "https://fable.fandom.com/wiki/Fake_Wedding_Ring",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "GRAIN_SACK"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Grain Sack",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Grain_Sack.jpg",
+    "source": "https://fable.fandom.com/wiki/Grain_Sack",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SILVER_KEY"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Silver Key",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Silver_Key.JPG",
+    "source": "https://fable.fandom.com/wiki/Silver_Key",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SPADE"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Spade",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Spade.jpg",
+    "source": "https://fable.fandom.com/wiki/Spade",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "ROD_OF_CHAMPIONS"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Rod of Champions",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Rod_of_Champions.jpg",
+    "source": "https://fable.fandom.com/wiki/The_Rod_of_Champions",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "BLUE_MUSHROOM"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Blue Mushroom",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Blue_Mushroom.jpg",
+    "source": "https://fable.fandom.com/wiki/Blue_Mushroom",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "ROSIE"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Rosie",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Rosie.png",
+    "source": "https://fable.fandom.com/wiki/Rosie",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "GOLDEN_FISH"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Golden Fish",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Goldenfish.jpg",
+    "source": "https://fable.fandom.com/wiki/Golden_Fish",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
+  },
+  {
+    "match": [
+      "SEPTIMAL_KEY"
+    ],
+    "exact": false,
+    "category": "Objeto",
+    "title": "Septimal Key",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Septimal_Key.jpg",
+    "source": "https://fable.fandom.com/wiki/Septimal_Key",
+    "sourceName": "The Fable Wiki",
+    "verified": "Imagen representativa documentada en Fable Wiki."
   }
 ]
