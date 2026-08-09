@@ -1,6 +1,6 @@
 # Fable TLC Atlas
 
-Sitio estático profesional en **Astro + Tailwind CSS** generado a partir de `FableTLC_EgoMP_MegaCatalogo.xlsx`.
+Sitio estático profesional en **Astro + Tailwind CSS** generado a partir de `FableTLC_MegaCatalogo.xlsx he informacion web`.
 
 ## Incluye
 
@@ -25,4 +25,10 @@ npm run dev
 
 ```bash
 npm run build
+```
+
+## Github Page 
+```
+https://xxkuroikenshixx.github.io/FableTLC-Atlas/
+
 ```
