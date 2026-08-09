@@ -1,0 +1,50 @@
+[
+  {
+    "name": "The Models Resource — Fable: The Lost Chapters",
+    "url": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/",
+    "scope": "16 assets 3D catalogados para TLC; se usan como evidencia de correspondencia visual cuando el nombre coincide",
+    "quality": "Repositorio comunitario de assets / referencia visual"
+  },
+  {
+    "name": "FableGame — Object IDs",
+    "url": "https://fablegame.info/fable1_object_ids",
+    "scope": "IDs de objetos, armas y magia",
+    "quality": "Comunidad / referencia técnica"
+  },
+  {
+    "name": "FableGame — Game files structure",
+    "url": "https://fablegame.info/modding/gamefiles_structure",
+    "scope": "game.bin, OBJECT, CREATURE, CDefs, graphics.big, textures.big y Levels",
+    "quality": "Comunidad / guía de modding"
+  },
+  {
+    "name": "Fable Community Forums — Add weapons with FE",
+    "url": "https://fablehero.com/threads/add-weapons-to-your-inventory-with-fe.2327/",
+    "scope": "CREATURE_HERO=1470, rango 5474–5628, ejemplo Sword of Aeons 5526",
+    "quality": "Foro histórico (2007)"
+  },
+  {
+    "name": "Fable Wiki — Legendary weapons",
+    "url": "https://fable.fandom.com/wiki/List_of_Legendary_Weapons_(Fable)",
+    "scope": "Tipo, daño, valor, augmentations y adquisición de armas legendarias",
+    "quality": "Wiki comunitaria CC-BY-SA"
+  },
+  {
+    "name": "Fable Wiki — Physical Spells",
+    "url": "https://fable.fandom.com/wiki/Physical_Spells",
+    "scope": "Descripción y niveles de habilidades físicas",
+    "quality": "Wiki comunitaria CC-BY-SA"
+  },
+  {
+    "name": "Fable Wiki — Enemies",
+    "url": "https://fable.fandom.com/wiki/Enemies",
+    "scope": "Familias de enemigos de Fable/TLC",
+    "quality": "Wiki comunitaria CC-BY-SA"
+  },
+  {
+    "name": "Fable Wiki — Fable: The Lost Chapters",
+    "url": "https://fable.fandom.com/wiki/Fable:_The_Lost_Chapters",
+    "scope": "Contexto general de TLC y referencias visuales de respaldo",
+    "quality": "Wiki comunitaria CC-BY-SA"
+  }
+]

@@ -1,0 +1,182 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import stats from '../data/stats.json';
+import community from '../data/community.json';
+import researchSources from '../data/research-sources.json';
+---
+<Base title="Fable TLC Atlas — EgoMP Technical Database">
+  <main class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-x-0 top-0 h-[640px] soft-grid [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+
+    <section id="top" class="hero-stage relative min-h-[720px] overflow-hidden border-b border-white/5">
+      <div class="parallax-layer parallax-grid" data-parallax="0.08"></div>
+      <div class="parallax-layer parallax-orb parallax-orb-a" data-parallax="0.22"></div>
+      <div class="parallax-layer parallax-orb parallax-orb-b" data-parallax="0.14"></div>
+      <div class="parallax-layer rune-ring rune-ring-a" data-parallax="0.3">ᚠ</div>
+      <div class="parallax-layer rune-ring rune-ring-b" data-parallax="0.18">ᛉ</div>
+      <div class="hero-vignette"></div>
+      <div class="relative z-10 mx-auto flex min-h-[720px] max-w-[1500px] items-center px-5 py-16 lg:px-8">
+        <div class="grid w-full items-center gap-12 lg:grid-cols-[1.18fr_.82fr]">
+          <div class="card-enter">
+            <div class="hero-kicker mb-6 inline-flex items-center gap-2 rounded-full border border-amber-300/15 bg-black/25 px-3 py-1 text-xs uppercase tracking-[.2em] text-amber-200/80 backdrop-blur"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_14px_#34d399]"></span> Atlas técnico auditable de Albion</div>
+            <h1 class="hero-title max-w-5xl text-5xl font-black leading-[.88] tracking-[-.055em] sm:text-7xl lg:text-[94px]" aria-label="FABLE TLC ATLAS"><span id="typedTitle" class="gold-text typing-title" data-text="FABLE TLC ATLAS"></span><span class="typing-caret" aria-hidden="true"></span></h1>
+            <p class="hero-subtitle mt-5 text-xl font-semibold tracking-[-.02em] text-white/78 sm:text-2xl lg:text-3xl">Explorá el ADN de Albion</p>
+            <p class="mt-7 max-w-2xl text-base leading-7 text-white/52 lg:text-lg">Objetos, entidades, CDefs, regiones, magia, hashes y offsets conectados en una misma interfaz. Los datos del Excel permanecen separados del enriquecimiento comunitario.</p>
+            <div class="mt-8 flex flex-wrap gap-3"><a href="#catalog" class="epic-btn inline-flex items-center gap-2 rounded-xl bg-amber-200 px-5 py-3 text-sm font-bold text-black"><Icon name="search" size={17}/> Explorar catálogo</a><a href="#schema" class="inline-flex items-center gap-2 rounded-xl border border-amber-200/15 bg-black/20 px-5 py-3 text-sm font-semibold text-white/72 backdrop-blur transition hover:border-amber-200/35 hover:text-amber-100">Ver esquema →</a><button id="heroExport" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/75 transition hover:border-amber-200/30 hover:text-amber-100"><Icon name="download" size={17}/> Exportar</button></div>
+          </div>
+          <div class="glass card-enter hero-stats relative overflow-hidden rounded-[30px] p-5 [animation-delay:140ms]">
+            <div class="scanline"></div><div class="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-amber-300/10 blur-3xl"></div>
+            <div class="flex items-center justify-between"><div><p class="text-xs uppercase tracking-[.2em] text-white/35">Índice vivo</p><h2 class="mt-1 text-xl font-semibold">MegaCatálogo local</h2></div><Icon name="database" size={27} class="text-amber-200/70"/></div>
+            <div class="mt-6 grid grid-cols-2 gap-3">{[['Entradas',stats.catalog],['Armas + IDs',stats.weapons],['Entidades',stats.creatures],['Regiones',stats.regions],['Magia',stats.magic],['UI / recursos',stats.ui]].map(([k,v])=><div class="stat-tile rounded-2xl border border-white/6 bg-black/20 p-4"><div class="text-2xl font-black tracking-tight text-white">{Number(v).toLocaleString('es-AR')}</div><div class="mt-1 text-xs text-white/38">{k}</div></div>)}</div>
+            <div class="mt-4 rounded-2xl border border-emerald-400/10 bg-emerald-400/5 p-4 text-xs leading-5 text-emerald-100/60"><strong class="text-emerald-200">Regla del atlas:</strong> si una relación, imagen o dato externo no puede respaldarse, no se muestra como verificado.</div>
+          </div>
+        </div>
+      </div>
+      <a href="#schema" class="scroll-hint" aria-label="Ir al esquema"><span>SCROLL</span><i></i></a>
+    </section>
+
+    <section id="schema" class="mx-auto max-w-[1500px] px-5 pb-8 pt-16 lg:px-8">
+      <div class="mb-7 flex flex-col justify-between gap-4 lg:flex-row lg:items-end"><div><p class="text-xs uppercase tracking-[.24em] text-amber-200/55">Vista relacional</p><h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">INTERFAZ DEL JUEGO</h2><p class="mt-3 max-w-3xl text-sm leading-6 text-white/42">Otra forma de leer la base: las flechas sólidas representan relaciones respaldadas por la estructura del catálogo; las punteadas son agrupaciones de navegación y no implican un offset o puntero directo.</p></div><div class="schema-legend"><span><i class="solid"></i>relación respaldada</span><span><i class="dashed"></i>agrupación visual</span></div></div>
+      <div class="glass schema-shell rounded-[30px] p-4 sm:p-7">
+        <div class="schema-canvas" id="schemaCanvas">
+          <svg class="schema-lines" viewBox="0 0 1200 650" preserveAspectRatio="none" aria-hidden="true">
+            <defs><marker id="arrowGold" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="rgba(245,216,148,.62)"/></marker></defs>
+            <path class="edge solid-edge" d="M600 85 C600 125 315 120 315 185"/><path class="edge solid-edge" d="M600 85 C600 125 600 120 600 185"/><path class="edge solid-edge" d="M600 85 C600 125 885 120 885 185"/>
+            <path class="edge solid-edge" d="M315 255 C315 310 180 315 180 385"/><path class="edge solid-edge" d="M315 255 C315 310 405 315 405 385"/>
+            <path class="edge solid-edge" d="M600 255 C600 310 600 315 600 385"/><path class="edge solid-edge" d="M885 255 C885 310 815 315 815 385"/><path class="edge solid-edge" d="M885 255 C885 310 1030 315 1030 385"/>
+            <path class="edge dashed-edge" d="M180 455 C180 515 390 520 500 575"/><path class="edge dashed-edge" d="M405 455 C405 515 470 520 535 575"/><path class="edge dashed-edge" d="M600 455 C600 515 600 520 600 575"/><path class="edge dashed-edge" d="M815 455 C815 515 720 520 665 575"/><path class="edge dashed-edge" d="M1030 455 C1030 515 800 520 700 575"/>
+          </svg>
+          <button class="schema-node root" data-cat=""><span class="node-label">GAME DATA</span><strong>Fable TLC</strong><small>names.bin + game.bin</small></button>
+          <button class="schema-node level-2 n1" data-cat="Objeto"><span class="node-label">OBJECT</span><strong>Objetos</strong><small>inventario · armas · referencias</small></button>
+          <button class="schema-node level-2 n2" data-cat="Entidad"><span class="node-label">CREATURE</span><strong>Entidades</strong><small>CCreatureDef · IA · equipo</small></button>
+          <button class="schema-node level-2 n3" data-cat="Mapa / región"><span class="node-label">REGION</span><strong>Mapas / regiones</strong><small>CRegionDef · transición · spawn</small></button>
+          <button class="schema-node level-3 n4" data-cat="Arma"><span class="node-label">CWEAPONDEF</span><strong>Armas</strong><small>IDs · daño · modelo</small></button>
+          <button class="schema-node level-3 n5" data-cat="Magia / habilidad"><span class="node-label">ABILITY</span><strong>Magia</strong><small>efecto · duración · proyectil</small></button>
+          <button class="schema-node level-3 n6" data-cat="Entidad"><span class="node-label">CCREATUREDEF</span><strong>Creature Def</strong><small>stats · facción · apariencia</small></button>
+          <button class="schema-node level-3 n7" data-cat="Interfaz"><span class="node-label">UI DEF</span><strong>Interfaz</strong><small>texto · sprite · layout</small></button>
+          <button class="schema-node level-3 n8" data-cat="Recurso gráfico"><span class="node-label">GRAPHICS</span><strong>Recursos</strong><small>modelo · textura · material</small></button>
+          <button class="schema-node sink" data-cat=""><span class="node-label">ATLAS</span><strong>Nombre + hash + offset</strong><small>índice navegable / exportable</small></button>
+        </div>
+        <div class="mt-5 rounded-2xl border border-white/5 bg-black/20 px-4 py-3 text-xs leading-5 text-white/38">Hacé clic en cualquier nodo para saltar al catálogo ya filtrado. El esquema resume la clasificación presente en tu base; no pretende afirmar punteros de memoria que el Excel no haya validado.</div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog-lift mx-auto max-w-[1500px] px-5 pb-10 pt-6 lg:px-8">
+      <div class="mb-5 flex flex-col justify-between gap-4 lg:flex-row lg:items-end"><div><p class="text-xs uppercase tracking-[.24em] text-amber-200/55">Buscador universal</p><h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">13 mil+ registros en una sola vista</h2></div><div id="resultMeta" class="text-sm text-white/40">Preparando índice…</div></div>
+      <div class="glass overflow-hidden rounded-[28px]">
+        <div class="border-b border-white/6 p-4 lg:p-5"><div class="grid gap-3 lg:grid-cols-[1fr_auto_auto]"><label class="relative block"><Icon name="search" size={19} class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/35"/><input id="searchInput" class="w-full rounded-2xl border border-white/8 bg-black/25 py-3.5 pl-12 pr-4 text-sm outline-none transition placeholder:text-white/25 focus:border-amber-300/35 focus:ring-4 focus:ring-amber-300/5" placeholder="Nombre, internal name, ID, hash, CDef, propiedades…" autocomplete="off"/></label><select id="categoryFilter" class="rounded-2xl border border-white/8 bg-[#10161b] px-4 py-3 text-sm text-white/70 outline-none"><option value="">Todas las categorías</option></select><button id="exportBtn" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-amber-300/20 bg-amber-300/8 px-5 py-3 text-sm font-semibold text-amber-100 hover:bg-amber-300/12"><Icon name="download" size={17}/> Exportar</button></div><div class="mt-3 flex flex-wrap gap-2" id="quickFilters"></div></div>
+        <div class="overflow-x-auto"><table class="catalog-table w-full min-w-[1050px] text-left text-sm"><thead class="sticky top-0 z-10 bg-[#0d1216]/96 text-[11px] uppercase tracking-[.13em] text-white/34 backdrop-blur"><tr><th class="w-[76px] px-4 py-3">Imagen</th><th class="px-4 py-3">Registro</th><th class="px-4 py-3">Categoría</th><th class="px-4 py-3">CDef</th><th class="px-4 py-3">ID</th><th class="px-4 py-3">Hash</th><th class="px-4 py-3">Estado</th><th class="px-4 py-3 text-right">Detalle</th></tr></thead><tbody id="resultsBody" class="divide-y divide-white/5"></tbody></table></div>
+        <div class="flex items-center justify-between border-t border-white/6 px-5 py-4"><button id="prevBtn" class="rounded-xl border border-white/8 px-4 py-2 text-xs text-white/55 disabled:opacity-25">← Anterior</button><div id="pageMeta" class="text-xs text-white/35"></div><button id="nextBtn" class="rounded-xl border border-white/8 px-4 py-2 text-xs text-white/55 disabled:opacity-25">Siguiente →</button></div>
+      </div>
+    </section>
+
+    <section id="featured" class="mx-auto max-w-[1500px] px-5 py-16 lg:px-8"><div class="mb-7"><p class="text-xs uppercase tracking-[.24em] text-amber-200/55">Lore + comunidad</p><h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Fichas enriquecidas</h2><p class="mt-3 max-w-2xl text-sm leading-6 text-white/42">Estas fichas agregan contexto de fuentes públicas y mantienen el enlace de procedencia. Las imágenes se solicitan remotamente: no se empaquetan dentro del repositorio.</p></div>
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">{community.map((x,i)=><article class="glass group overflow-hidden rounded-[24px] card-enter" style={`animation-delay:${Math.min(i*45,450)}ms`}><div class="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-amber-200/8 to-emerald-300/5"><img src={x.imageUrl} alt={x.title} loading="lazy" referrerpolicy="no-referrer" class="h-full w-full object-cover opacity-75 transition duration-700 group-hover:scale-105 group-hover:opacity-95" onerror="this.style.display='none'"/><div class="absolute inset-0 bg-gradient-to-t from-[#10161b] via-transparent to-transparent"></div><span class="absolute left-3 top-3 rounded-full border border-white/10 bg-black/55 px-2.5 py-1 text-[10px] uppercase tracking-[.15em] text-white/60">{x.kind}</span></div><div class="p-5"><h3 class="text-xl font-bold tracking-tight">{x.title}</h3><p class="mt-2 min-h-10 text-xs leading-5 text-white/42">{x.summary}</p><div class="mt-4 grid grid-cols-2 gap-2 text-xs"><div class="rounded-xl bg-white/[.035] p-3"><span class="block text-white/28">Tipo</span><strong class="mt-1 block font-medium text-white/72">{x.type}</strong></div><div class="rounded-xl bg-white/[.035] p-3"><span class="block text-white/28">Daño / efecto</span><strong class="mt-1 block font-medium text-white/72">{x.damage}</strong></div></div><a href={x.source} target="_blank" rel="noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-amber-200/70 hover:text-amber-100"><Icon name="link" size={14}/> Fuente pública</a></div></article>)}</div>
+    </section>
+
+    <section id="sources" class="mx-auto max-w-[1500px] px-5 pb-24 pt-8 lg:px-8"><div class="glass rounded-[28px] p-6 lg:p-8"><div class="grid gap-8 lg:grid-cols-[.8fr_1.2fr]"><div><Icon name="shield" size={28} class="text-amber-200/70"/><h2 class="mt-4 text-2xl font-bold">Procedencia y calidad</h2><p class="mt-3 text-sm leading-6 text-white/42">El sitio diferencia extracción local, correlación comunitaria y referencias de lore. Para offsets o escritura sobre archivos del juego, la propia base advierte validar la build y SHA-256 antes de usarlos.</p></div><div class="space-y-2">{researchSources.map(s=><a href={s.url} target="_blank" rel="noreferrer" class="flex items-start justify-between gap-4 rounded-2xl border border-white/5 bg-black/15 p-4 transition hover:border-amber-300/15 hover:bg-amber-300/[.025]"><div><div class="text-sm font-semibold text-white/75">{s.name}</div><div class="mt-1 text-xs leading-5 text-white/35">{s.scope}</div></div><span class="shrink-0 rounded-full bg-white/5 px-2 py-1 text-[10px] text-white/35">{s.quality}</span></a>)}</div></div></div></section>
+  </main>
+
+  <dialog id="detailDialog" class="m-auto w-[min(760px,calc(100vw-28px))] rounded-[28px] border border-amber-200/15 bg-[#0c1115] p-0 text-white shadow-2xl backdrop:bg-black/75 backdrop:backdrop-blur-sm"><div id="detailContent"></div></dialog>
+  <dialog id="exportDialog" class="m-auto w-[min(520px,calc(100vw-28px))] rounded-[28px] border border-amber-200/15 bg-[#0c1115] p-0 text-white shadow-2xl backdrop:bg-black/75 backdrop:backdrop-blur-sm"><div class="p-6"><div class="flex items-center justify-between"><div><div class="text-xs uppercase tracking-[.2em] text-amber-200/55">Exportación</div><h3 class="mt-1 text-2xl font-bold">Elegí un formato</h3></div><button id="closeExport" class="rounded-xl p-2 text-white/40 hover:bg-white/5 hover:text-white"><Icon name="x"/></button></div><p class="mt-3 text-sm leading-6 text-white/40">Se exportan los resultados del filtro actual. Si no hay filtro, se exporta el catálogo completo.</p><div id="exportFormats" class="mt-5 grid grid-cols-2 gap-2"></div></div></dialog>
+
+  <script>
+    import catalog from '../data/catalog.json';
+    import externalAssets from '../data/external-assets.json';
+    const $=(s)=>document.querySelector(s);
+    const search=$('#searchInput'), category=$('#categoryFilter'), body=$('#resultsBody'), meta=$('#resultMeta'), pageMeta=$('#pageMeta');
+    const prev=$('#prevBtn'), next=$('#nextBtn'), detail=$('#detailDialog'), detailContent=$('#detailContent'), exp=$('#exportDialog');
+    const PAGE=60; let page=1, filtered=catalog;
+    const esc=(v)=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+    const normalize=(v)=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+    const compact=(v)=>normalize(v).replace(/^0x/,'').replace(/[^a-z0-9]/g,'');
+    const searchable=(r)=>{
+      const raw=[r.name,r.internal,r.category,r.cdef,r.id,r.idHex,r.hash,r.offset,r.properties,r.confidence,r.source,r.sheet,r.row].join(' ');
+      const hex=[r.idHex,r.hash,r.offset].filter(Boolean).flatMap(v=>[normalize(v),compact(v),`0x${compact(v)}`]).join(' ');
+      return `${normalize(raw)} ${compact(raw)} ${hex}`;
+    };
+    const searchIndex=catalog.map(r=>searchable(r));
+    const assetIndex=externalAssets.map(a=>({...a,needles:a.match.map(compact)}));
+    const fallbackImages={
+      'Arma':'https://fable.fandom.com/wiki/Special:Redirect/file/Sword_of_Aeons.png',
+      'Entidad':'https://fable.fandom.com/wiki/Special:Redirect/file/Balverine.png',
+      'Mapa / región':'https://fable.fandom.com/wiki/Special:Redirect/file/Snowspire_Village_(Fable_TLC).png',
+      'Magia / habilidad':'https://fable.fandom.com/wiki/Special:Redirect/file/Physical_Shield.png',
+      'Interfaz':'https://fable.fandom.com/wiki/Special:Redirect/file/Fable_-_The_Lost_Chapters_(Logo).png',
+      'Recurso gráfico':'https://fable.fandom.com/wiki/Special:Redirect/file/Fable_The_Lost_Chapters_Cover.jpg'
+    };
+    function assetFor(r){
+      const internal=compact(r.internal), key=compact(`${r.internal} ${r.name}`);
+      const found=assetIndex.find(a=>{
+        if(a.category && a.category!==r.category)return false;
+        if(a.exact)return a.needles.some(n=>n===internal);
+        return a.needles.some(n=>n && key.includes(n));
+      });
+      if(found)return {...found,specific:true};
+      const candidateCategories=['Entidad','Arma','Mapa / región','Magia / habilidad','Objeto'];
+      if(candidateCategories.includes(r.category) && r.name && /^[A-Za-z][A-Za-z0-9 '\-]{2,50}$/.test(r.name)){
+        const stem=encodeURIComponent(r.name.replaceAll(' ','_'));
+        return {image:`https://fable.fandom.com/wiki/Special:Redirect/file/${stem}.jpg`,imageAlt:`https://fable.fandom.com/wiki/Special:Redirect/file/${stem}.png`,source:`https://fable.fandom.com/wiki/${stem}`,sourceName:'Fable Wiki · coincidencia nominal',specific:false,candidate:true,title:r.name};
+      }
+      return {image:'',source:'https://fable.fandom.com/wiki/Fable:_The_Lost_Chapters',sourceName:'Sin imagen específica verificada',specific:false,title:r.name||r.internal};
+    }
+    const cats=[...new Set(catalog.map(x=>x.category).filter(Boolean))].sort(); cats.forEach(c=>category.insertAdjacentHTML('beforeend',`<option>${esc(c)}</option>`));
+    const popular=['Arma','Entidad','Mapa / región','Magia / habilidad','Interfaz','Recurso gráfico']; $('#quickFilters').innerHTML=popular.map(x=>`<button data-cat="${esc(x)}" class="qf rounded-full border border-white/7 px-3 py-1.5 text-[11px] text-white/42 transition hover:border-amber-300/20 hover:text-amber-100">${esc(x)}</button>`).join('');
+    document.querySelectorAll('.qf').forEach(b=>b.addEventListener('click',()=>{category.value=category.value===b.dataset.cat?'':b.dataset.cat; page=1;apply()}));
+    function badge(c){const cls=c==='Entidad'?'text-rose-200 bg-rose-300/7':c==='Arma'?'text-amber-200 bg-amber-300/7':c.includes('Mapa')?'text-emerald-200 bg-emerald-300/7':c.includes('Magia')?'text-violet-200 bg-violet-300/7':'text-sky-200 bg-sky-300/7';return `<span class="rounded-full px-2.5 py-1 text-[10px] ${cls}">${esc(c||'—')}</span>`}
+    function state(s){let dot='bg-slate-400';if(/verific|extraídos localmente/i.test(s))dot='bg-emerald-400';else if(/correlacion|publicado/i.test(s))dot='bg-amber-300';return `<span class="inline-flex max-w-[220px] items-center gap-2 text-xs text-white/42"><i class="h-1.5 w-1.5 shrink-0 rounded-full ${dot}"></i><span class="truncate">${esc(s||'Sin estado')}</span></span>`}
+    function render(){
+      const total=filtered.length, pages=Math.max(1,Math.ceil(total/PAGE)); if(page>pages)page=pages;
+      const a=(page-1)*PAGE, list=filtered.slice(a,a+PAGE);
+      body.innerHTML=list.map((r,i)=>{const media=assetFor(r);return `<tr class="catalog-row group" style="--delay:${Math.min(i*8,240)}ms">
+        <td class="px-4 py-2.5"><a href="${esc(media.source)}" target="_blank" rel="noreferrer" class="thumb-shell block" title="${esc(media.specific?`Imagen verificada: ${media.sourceName}`:media.candidate?'Imagen candidata por coincidencia exacta de nombre':'Sin imagen específica verificada')}">${media.image?`<img src="${esc(media.image)}" data-alt="${esc(media.imageAlt||'')}" alt="${esc(media.title||r.name||'Fable TLC')}" loading="lazy" referrerpolicy="no-referrer" class="catalog-thumb" onerror="if(this.dataset.alt&&!this.dataset.tried){this.dataset.tried='1';this.src=this.dataset.alt}else{this.style.display='none';this.nextElementSibling.style.display='grid'}"/><span class="thumb-fallback" style="display:none">✦</span>`:`<span class="thumb-fallback" style="display:grid">✦</span>`}${media.specific?'<i class="thumb-dot"></i>':''}</a></td>
+        <td class="px-4 py-3"><div class="font-semibold text-white/82">${esc(r.name||r.internal||'Sin nombre')}</div><div class="mt-1 max-w-[330px] truncate font-mono text-[10px] text-white/28">${esc(r.internal||'—')}</div>${media.specific?`<div class="mt-1 text-[9px] uppercase tracking-[.12em] text-emerald-300/45">imagen externa verificada</div>`:media.candidate?`<div class="mt-1 text-[9px] uppercase tracking-[.12em] text-amber-200/35">imagen por coincidencia nominal</div>`:''}</td>
+        <td class="px-4 py-3">${badge(r.category)}</td><td class="px-4 py-3 text-xs text-white/45">${esc(r.cdef||'—')}</td><td class="px-4 py-3 font-mono text-xs"><span class="text-amber-100/70">${esc(r.id||'—')}</span><span class="ml-2 text-white/25">${esc(r.idHex||'')}</span></td><td class="px-4 py-3 font-mono text-[11px] text-white/35">${esc(r.hash||'—')}</td><td class="px-4 py-3">${state(r.confidence)}</td><td class="px-4 py-3 text-right"><button data-i="${a+i}" class="detailBtn rounded-xl border border-white/7 px-3 py-2 text-xs text-white/45 transition hover:border-amber-300/20 hover:text-amber-100">Ver →</button></td></tr>`}).join('');
+      meta.textContent=`${total.toLocaleString('es-AR')} resultados · ${catalog.length.toLocaleString('es-AR')} registros indexados`;
+      pageMeta.textContent=`Página ${page} de ${pages}`;prev.disabled=page<=1;next.disabled=page>=pages;
+      document.querySelectorAll('.detailBtn').forEach(b=>b.onclick=()=>openDetail(filtered[Number(b.dataset.i)]));
+    }
+    function apply(){
+      const q=normalize(search.value), qc=compact(search.value), tokens=q.split(/\s+/).filter(Boolean), c=category.value;
+      filtered=catalog.filter((r,i)=>{
+        if(c&&r.category!==c)return false;
+        if(!q)return true;
+        const h=searchIndex[i];
+        const tokenMatch=tokens.every(t=>h.includes(t)||h.includes(compact(t)));
+        const compactMatch=qc.length>=3&&h.includes(qc);
+        return tokenMatch||compactMatch;
+      });
+      render();
+    }
+    let t;search.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(()=>{page=1;apply()},90)});category.addEventListener('change',()=>{page=1;apply()});prev.onclick=()=>{page--;render();scrollTo({top:$('#catalog').offsetTop-55,behavior:'smooth'})};next.onclick=()=>{page++;render();scrollTo({top:$('#catalog').offsetTop-55,behavior:'smooth'})};
+    function openDetail(r){const media=assetFor(r);const fields=[['Categoría',r.category],['Clase CDef',r.cdef],['Nombre interno',r.internal],['Nombre',r.name],['ID decimal',r.id],['ID hexadecimal',r.idHex],['Hash nombre',r.hash],['Offset names.bin',r.offset],['Propiedades modificables',r.properties],['Confianza / estado',r.confidence],['Fuente técnica',r.source]];detailContent.innerHTML=`<div class="detail-hero border-b border-white/6 p-6"><div class="grid gap-5 sm:grid-cols-[150px_1fr_auto]"><a href="${esc(media.source)}" target="_blank" rel="noreferrer" class="detail-image">${media.image?`<img src="${esc(media.image)}" data-alt="${esc(media.imageAlt||'')}" alt="${esc(media.title)}" referrerpolicy="no-referrer" onerror="if(this.dataset.alt&&!this.dataset.tried){this.dataset.tried='1';this.src=this.dataset.alt}else{this.style.display='none';this.parentElement.classList.add('missing-image')}"/>`:'<span class="detail-missing">SIN IMAGEN<br/>VERIFICADA</span>'}</a><div>${badge(r.category)}<h3 class="mt-3 text-2xl font-bold">${esc(r.name||r.internal)}</h3><p class="mt-1 font-mono text-xs text-white/30">${esc(r.internal||'')}</p><a href="${esc(media.source)}" target="_blank" rel="noreferrer" class="mt-3 inline-flex text-xs text-amber-200/65 hover:text-amber-100">${media.specific?'Imagen externa verificada':media.candidate?'Imagen por coincidencia nominal':'Sin imagen verificada'} · ${esc(media.sourceName)} ↗</a></div><button id="closeDetail" class="h-10 rounded-xl p-2 text-white/35 hover:bg-white/5">✕</button></div></div><div class="grid gap-2 p-6 sm:grid-cols-2">${fields.map(([k,v])=>`<div class="rounded-2xl border border-white/5 bg-white/[.025] p-4 ${k.includes('Propiedades')||k.includes('Confianza')||k.includes('Fuente')?'sm:col-span-2':''}"><div class="text-[10px] uppercase tracking-[.14em] text-white/28">${esc(k)}</div><div class="mt-2 break-words text-sm leading-6 text-white/68">${esc(v||'—')}</div></div>`).join('')}</div>`;detail.showModal();$('#closeDetail').onclick=()=>detail.close()}
+    detail.addEventListener('click',e=>{if(e.target===detail)detail.close()});
+    const formats=[['CSV','csv'],['JSON','json'],['TSV','tsv'],['NDJSON','ndjson'],['XML','xml'],['YAML','yaml']];$('#exportFormats').innerHTML=formats.map(([n,e])=>`<button data-ext="${e}" class="fmt rounded-2xl border border-white/7 bg-white/[.025] px-4 py-3 text-left text-sm font-semibold text-white/70 transition hover:border-amber-300/25 hover:bg-amber-300/[.04]">${n}<span class="ml-2 text-[10px] font-normal text-white/25">.${e}</span></button>`).join('');
+    function openExport(){exp.showModal()} $('#exportBtn').onclick=openExport;$('#heroExport').onclick=openExport;$('#closeExport').onclick=()=>exp.close();exp.addEventListener('click',e=>{if(e.target===exp)exp.close()});
+    const flat=r=>({category:r.category,cdef:r.cdef,internal:r.internal,name:r.name,id:r.id,idHex:r.idHex,hash:r.hash,offset:r.offset,properties:r.properties,confidence:r.confidence,source:r.source});
+    function quote(v,sep=','){v=String(v??'');return /["\n\r,\t;]/.test(v)?`"${v.replaceAll('"','""')}"`:v}
+    function serialize(data,ext){const rows=data.map(flat),keys=Object.keys(rows[0]||flat({}));if(ext==='json')return JSON.stringify(rows,null,2);if(ext==='ndjson')return rows.map(x=>JSON.stringify(x)).join('\n');if(ext==='csv'||ext==='tsv'){const sep=ext==='csv'?',':'\t';return [keys.join(sep),...rows.map(r=>keys.map(k=>quote(r[k],sep)).join(sep))].join('\n')}if(ext==='xml')return `<?xml version="1.0" encoding="UTF-8"?>\n<catalog>\n${rows.map(r=>`  <item>\n${keys.map(k=>`    <${k}>${esc(r[k])}</${k}>`).join('\n')}\n  </item>`).join('\n')}\n</catalog>`;if(ext==='yaml')return rows.map(r=>'- '+keys.map((k,i)=>`${i?'  ':''}${k}: ${JSON.stringify(r[k]??'')}`).join('\n')).join('\n');return ''}
+    document.querySelectorAll('.fmt').forEach(b=>b.onclick=()=>{const ext=b.dataset.ext,txt=serialize(filtered,ext),mime=ext==='json'?'application/json':'text/plain;charset=utf-8',blob=new Blob([txt],{type:mime}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`fable-tlc-atlas-${new Date().toISOString().slice(0,10)}.${ext}`;a.click();URL.revokeObjectURL(url);exp.close()});
+
+    // Hero typewriter: decorative only; aria-label keeps the full title available immediately.
+    const typed=$('#typedTitle');
+    if(typed){const txt=typed.dataset.text||'FABLE TLC ATLAS';let i=0;const tick=()=>{typed.textContent=txt.slice(0,i++);if(i<=txt.length)setTimeout(tick,i<6?95:72)};setTimeout(tick,260)}
+
+    // Lightweight parallax with pointer + scroll. Disabled automatically for reduced motion.
+    if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const layers=[...document.querySelectorAll('[data-parallax]')]; let mx=0,my=0,sy=0,raf=0;
+      const draw=()=>{layers.forEach(el=>{const d=Number(el.dataset.parallax||.1);el.style.transform=`translate3d(${mx*d}px,${my*d+sy*d*.16}px,0)`});raf=0};
+      const queue=()=>{if(!raf)raf=requestAnimationFrame(draw)};
+      addEventListener('pointermove',e=>{mx=(e.clientX-innerWidth/2)*.055;my=(e.clientY-innerHeight/2)*.04;queue()},{passive:true});
+      addEventListener('scroll',()=>{sy=scrollY;queue()},{passive:true});
+    }
+
+    document.querySelectorAll('.schema-node').forEach(node=>node.addEventListener('click',()=>{
+      const cat=node.dataset.cat||''; category.value=cat; page=1; apply();
+      setTimeout(()=>$('#catalog').scrollIntoView({behavior:'smooth',block:'start'}),40);
+    }));
+    render();
+  </script>
+</Base>

@@ -1,0 +1,213 @@
+[
+  {
+    "match": [
+      "CREATURE_ASSASSIN",
+      "CREATURE_MURDER_TWIST_ASSASSIN",
+      "CREATURE_RANSOM_VICTIM_ASSASSIN"
+    ],
+    "exact": true,
+    "category": "Entidad",
+    "title": "Assassin",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Assassin.jpg",
+    "source": "https://fable.fandom.com/wiki/Assassin",
+    "sourceName": "The Fable Wiki",
+    "verified": "La wiki identifica al Assassin como enemigo humano presente en Fable y Fable: The Lost Chapters; archivo visual listado como File:Assassin.jpg."
+  },
+  {
+    "match": [
+      "ASSASSIN_RUSH",
+      "HERO_ABILITY_SKILL_ASSASSIN_RUSH",
+      "SPECIAL_ABILITIES_ASSASSIN_RUSH_DEF"
+    ],
+    "exact": true,
+    "category": "Magia / habilidad",
+    "title": "Assassin Rush",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/ASSASSIN_RUSH.png",
+    "source": "https://fable.fandom.com/wiki/Assassin_Rush",
+    "sourceName": "The Fable Wiki",
+    "verified": "La categoría de imágenes de hechizos de Fable lista explícitamente File:ASSASSIN RUSH.png."
+  },
+  {
+    "match": [
+      "CREATURE_SHERIFF",
+      "SHERIFF",
+      "BOWERSTONE SHERIFF"
+    ],
+    "title": "Sheriff of Bowerstone",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Bowerstone_Sheriff.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336936/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "BALVERINE"
+    ],
+    "title": "Balverine",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Balverine.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336937/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "ELIXER_OF_LIFE",
+      "ELIXIR_OF_LIFE",
+      "ELIXER OF LIFE",
+      "ELIXIR OF LIFE"
+    ],
+    "title": "Elixer of Life",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Elixir_of_Life.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336938/",
+    "sourceName": "The Models Resource",
+    "verified": "Asset publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "GREEN_APPLE",
+      "GREEN APPLE",
+      "APPLE"
+    ],
+    "title": "Green Apple",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Green_Apple.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336939/",
+    "sourceName": "The Models Resource",
+    "verified": "Asset publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "HEALTH_POTION",
+      "HEALTH POTION",
+      "POTION_HEALTH"
+    ],
+    "title": "Health Potion",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Health_Potion.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336940/",
+    "sourceName": "The Models Resource",
+    "verified": "Asset publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "MAZE_CLASP",
+      "MAZE'S CLASP",
+      "MAZES CLASP"
+    ],
+    "title": "Maze's Clasp",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Maze%27s_Clasp.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336941/",
+    "sourceName": "The Models Resource",
+    "verified": "Asset publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "RED_MEAT",
+      "RED MEAT",
+      "MEAT"
+    ],
+    "title": "Red Meat",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Red_Meat.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336942/",
+    "sourceName": "The Models Resource",
+    "verified": "Asset publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "OBJECT_IRON_LONGSWORD",
+      "IRON LONGSWORD"
+    ],
+    "title": "Iron Longsword",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Iron_Longsword.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336943/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "YEW_LONGBOW",
+      "YEW LONGBOW"
+    ],
+    "title": "Yew Longbow",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Yew_Longbow.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336944/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "DRAGON_SCALE",
+      "DRAGON SCALE"
+    ],
+    "title": "Dragon Scale",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Dragon_Scale.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336945/",
+    "sourceName": "The Models Resource",
+    "verified": "Contenido no usado publicado como asset de TLC"
+  },
+  {
+    "match": [
+      "BEREAVER",
+      "THE BEREAVER",
+      "OBJECT_LEGENDARY_GREATSWORD"
+    ],
+    "title": "The Bereaver",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/The_Bereaver.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336946/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "TEST_DOG",
+      "TEST DOG"
+    ],
+    "title": "test_dog",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Fable_The_Lost_Chapters_Cover.jpg",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336947/",
+    "sourceName": "The Models Resource",
+    "verified": "Contenido no usado publicado como asset de TLC"
+  },
+  {
+    "match": [
+      "CHEST"
+    ],
+    "title": "Chest",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Chest.jpg",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336951/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "CHICKEN_HAT",
+      "CHICKEN HAT"
+    ],
+    "title": "Chicken Hat",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Chicken_Hat.jpg",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/336952/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "OBJECT_SWORD_OF_AEONS_GOOD_01",
+      "AVO'S TEAR",
+      "AVOS TEAR"
+    ],
+    "title": "Avo's Tear",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Avo%27s_Tear.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/466495/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  },
+  {
+    "match": [
+      "OBJECT_SWORD_OF_AEONS",
+      "SWORD OF AEONS"
+    ],
+    "title": "Sword of Aeons",
+    "image": "https://fable.fandom.com/wiki/Special:Redirect/file/Sword_of_Aeons.png",
+    "source": "https://models.spriters-resource.com/pc_computer/fablethelostchapters/asset/466496/",
+    "sourceName": "The Models Resource",
+    "verified": "Modelo 3D publicado para Fable: The Lost Chapters"
+  }
+]
