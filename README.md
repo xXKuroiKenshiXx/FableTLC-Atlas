@@ -1,6 +1,6 @@
 # Fable TLC Atlas
 
-Sitio estático profesional en **Astro + Tailwind CSS** generado a partir de `FableTLC_EgoMP_MegaCatalogo.xlsx`.
+Sitio estático echo en **Astro + Tailwind CSS** generado a partir de datos de la comunidad y del juego mismo 
 
 ## Incluye
 
