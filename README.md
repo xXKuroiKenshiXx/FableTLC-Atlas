@@ -26,21 +26,3 @@ npm run dev
 ```bash
 npm run build
 ```
-
-## GitHub Pages
-
-El proyecto usa `BASE_PATH`. Para un repositorio llamado `fable-tlc-atlas`:
-
-```bash
-BASE_PATH=/fable-tlc-atlas/ npm run build
-```
-
-Publicá el contenido de `dist/` mediante GitHub Pages o GitHub Actions.
-
-### Cambios V3
-
-- Hero cinematográfico con efecto de tipeo y parallax.
-- Vista relacional "INTERFAZ DEL JUEGO" con nodos clickeables que filtran el catálogo.
-- Tabla más compacta y encabezado elevado.
-- Política de imágenes más estricta: no se reutilizan criaturas genéricas para representar registros sin imagen; se distingue entre imagen externa verificada, coincidencia nominal y ausencia de imagen.
-- Assassin y Assassin Rush quedan visualmente separados y documentados.
